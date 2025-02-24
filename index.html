@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 Rinterio Architecture</title>
+    <!-- Tailwind and Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Remix Icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-btn': '#abef5f',
+                        'secondary-btn': '#d4f6ae',
+                        'primary-color': '#212121',
+                        'secondary-color': '#494949',
+                        'secondary-light': '#737373',
+                        'primary-footer': '#1C1C1C',
+                        'bg-light': '#f4f4f4',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body style='font-family: "Manrope", serif;'>
+    <section class="container mx-auto">
+        <header>
+            <!-- Navbar -->
+            <div class="navbar py-6">
+                <div class="navbar-start">
+                    <a class="text-2xl font-bold"><i class="ri-arrow-right-up-long-line"></i> Rinterio</a>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="flex gap-6 px-1 text-secondary-color">
+                        <li><a class="cursor-pointer hover:text-lime-500 text-sm md:text-base">Home</a></li>
+                        <li><a class="cursor-pointer hover:text-lime-500 text-sm md:text-base">Blog</a></li>
+                        <li><a class="cursor-pointer hover:text-lime-500 text-sm md:text-base">Services</a></li>
+                        <li><a class="cursor-pointer hover:text-lime-500 text-sm md:text-base">Portfolio</a></li>
+                        <li><a class="cursor-pointer hover:text-lime-500 text-sm md:text-base">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end space-x-4">
+                    <div class="md:flex items-center justify-center space-x-2 hidden">
+                        <span
+                            class="text-lg text-secondary-light h-8 w-8 bg-bg-white text-center leading-8 rounded-full cursor-pointer hover:shadow-xl"><i
+                                class="ri-search-2-line"></i></span>
+                        <span
+                            class="text-lg text-secondary-light h-8 w-8 bg-bg-white text-center leading-8 rounded-full cursor-pointer hover:shadow-xl"><i
+                                class="ri-shopping-cart-2-line"></i></span>
+                    </div>
+                    <a
+                        class="btn bg-primary-btn font-bold pl-6 pr-4 rounded-full border-none hover:bg-lime-400 text-sm md:text-md hidden md:inline-flex">Book
+                        Consult <i
+                            class="ri-arrow-right-up-long-line w-8 h-8 leading-4 text-white bg-primary-color p-2 rounded-full"></i></a>
+                    <div class="dropdown dropdown-end ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow-md">
+                            <li><a>Home</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Section -->
+        </header>
+
+    </section>
+</body>
+
+</html>
